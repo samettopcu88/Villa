@@ -1,8 +1,6 @@
-﻿using MongoDB.Bson;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using Villa.Business.Abstract;
@@ -11,9 +9,9 @@ using Villa.Entity.Entites;
 
 namespace Villa.Business.Concrete
 {
-    public class BannerManager : GenericManager<Banner>, IBannerService
+    public class ContactManager : GenericManager<Contact>, IContactService
     {
-        public BannerManager(IGenericDal<Banner> genericDal) : base(genericDal)
+        public ContactManager(IGenericDal<Contact> genericDal) : base(genericDal)
         {
         }
     }

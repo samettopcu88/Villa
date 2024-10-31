@@ -4561,6 +4561,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Villa.Business\Villa.Business.csproj" />
     <ProjectReference Include="..\Villa.DataAccess\Villa.DataAccess.csproj" />
+    <ProjectReference Include="..\Villa.DTO\Villa.DTO.csproj" />
+    <ProjectReference Include="..\Villa.Entity\Villa.Entity.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -4570,6 +4572,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.6" />
     <PackageReference Include="MongoDB.Bson" Version="3.0.0" />
     <PackageReference Include="MongoDB.Driver" Version="3.0.0" />

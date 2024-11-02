@@ -19,7 +19,7 @@ namespace Villa.WebUI.Controllers
         public async Task<IActionResult> Index()
         {
             var values = await _bannerService.TGetListAsync();
-            var bannerList = _mapper.Map<ResultBannerDto>(values);
+            var bannerList = _mapper.Map<List<ResultBannerDto>>(values);
             return View(values);
         }
     }

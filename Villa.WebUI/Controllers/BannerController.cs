@@ -20,7 +20,7 @@ namespace Villa.WebUI.Controllers
         {
             var values = await _bannerService.TGetListAsync();
             var bannerList = _mapper.Map<List<ResultBannerDto>>(values);
-            return View(values);
+            return View(bannerList);
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿@model List<ResultBannerDto>
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Banner Listesi";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
@@ -8,7 +8,6 @@
     @{
         int count = 0;
     }
-    
     <tr>
         <th>#</th>
         <th>Şehir</th>
@@ -23,13 +22,12 @@
             <td>@item.City</td>
             <td>@item.Title</td>
             <td>
-                <a asp-controller="Banner" asp-action="DeleteBanner" as-route-id="@item.Id" class="btn btn-outline-danger">Sil</a>
-                <a asp-controller="Banner" asp-action="UpdateBanner" as-route-id="@item.Id" class="btn btn-outline-danger">Güncelle</a>
+                <a asp-controller="Banner" asp-action="DeleteBanner" asp-route-id="@item.Id" class="btn btn-outline-danger">Sil</a>
+                <a asp-controller="Banner" asp-action="UpdateBanner" asp-route-id="@item.Id" class="btn btn-outline-info">Güncelle</a>
             </td>
         </tr>
     }
-
-
 </table>
 
 <a asp-controller="Banner" asp-action="CreateBanner" class="btn btn-outline-dark">Yeni Banner Ekle</a>
+

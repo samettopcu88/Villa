@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Villa.Dto.Dtos.ContactDtos;
 using Villa.DTO.Dtos.BannerDtos;
 using Villa.Entity.Entites;
 
@@ -11,6 +12,10 @@ namespace Villa.WebUI.Mapping
             CreateMap<ResultBannerDto, Banner>().ReverseMap();
             CreateMap<UpdateBannerDto, Banner>().ReverseMap();
             CreateMap<CreateBannerDto, Banner>().ReverseMap();
+
+            CreateMap<CreateContactDto, Contact>().ReverseMap();
+            CreateMap<UpdateContactDto, Contact>().ReverseMap();
+            CreateMap<ResultContactDto, Contact>().ReverseMap();
         }
     }
 }

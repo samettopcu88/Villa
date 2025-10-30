@@ -33,7 +33,7 @@ namespace Villa.DataAccess.Repositories
 
         public async Task DeleteAsync(ObjectId id)
         {
-            var value =GetByIdAsync(id);
+            var value = await GetByIdAsync(id);
             _context.Remove(value);
             await _context.SaveChangesAsync();
         }

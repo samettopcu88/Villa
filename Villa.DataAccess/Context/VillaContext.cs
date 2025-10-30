@@ -24,6 +24,7 @@ namespace Villa.DataAccess.Context
         public DbSet<Message> Messages { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Quest> Quests { get; set; }
+        public DbSet<SubHeader> SubHeaders { get; set; }
         public DbSet<Video> Videos { get; set; }
 
 
@@ -37,6 +38,7 @@ namespace Villa.DataAccess.Context
             modelBuilder.Entity<Message>().ToCollection("Messages");
             modelBuilder.Entity<Product>().ToCollection("Products");
             modelBuilder.Entity<Quest>().ToCollection("Quests");
+            modelBuilder.Entity<SubHeader>().ToCollection("SubHeaders");
             modelBuilder.Entity<Video>().ToCollection("Videos");
         }
     }
